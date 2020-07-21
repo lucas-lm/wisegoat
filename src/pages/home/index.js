@@ -1,24 +1,28 @@
-import styled from 'styled-components'
 import Head from 'next/head'
 import Link from 'next/link'
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import Root, { Headline, Hero, CTA } from '../../components/Layouts/Home'
 
 export default function Home() {
   return (
-    <Title>
+    <Root>
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet"
         />
       </Head>
-      <Link href="/advise">
-        <a>Conselhos</a>
-      </Link>
-    </Title>
+      <Hero>
+        <Hero.Left>
+          <Headline>
+            <Headline.Small>Wise</Headline.Small>
+            <br /> Goat
+          </Headline>
+          <Link href="/advise" passHref>
+            <CTA>Ask advise</CTA>
+          </Link>
+        </Hero.Left>
+        <Hero.Image src="/assets/bodezinho.png" alt="little goat" />
+      </Hero>
+    </Root>
   )
 }
