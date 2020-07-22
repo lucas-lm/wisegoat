@@ -20,7 +20,11 @@ const prefixes = [
 export async function getServerSideProps(context) {
   const { data } = await axios.get('https://api.adviceslip.com/advice')
   return {
-    props: { advice: data.slip.advice, id: data.slip.id },
+    props: {
+      advice: data.slip.advice,
+      id: data.slip.id,
+      goat: 'https://placegoat.com/400/400',
+    },
   }
 }
 
@@ -62,9 +66,9 @@ export default function Advise(props) {
           <br />
           <small>&mdash; {prefixes[props.id % prefixes.length]} Goat</small>
         </Card.Quote>
-        <Card.Image src="https://placegoat.com/400/400" alt="goat" />
+        <Card.Image src={props.goat} alt="goat" />
         <Link href="/advice" passHref>
-          <Card.Button>Another advice &rarr;</Card.Button>
+          <Card.Button>Get another advice &rarr;</Card.Button>
         </Link>
       </Card>
       <Footer />
