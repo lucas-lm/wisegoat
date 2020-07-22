@@ -7,6 +7,18 @@ export const Root = styled.footer`
   padding: 4px 16px;
   grid-area: footer;
 
+  @media only screen and (max-width: 768px) {
+    font-size: 13px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    font-size: 12px;
+  }
+
+  @media only screen and (max-width: 375px) {
+    font-size: 11px;
+  }
+
   small {
     display: block;
     text-align: center;
@@ -47,6 +59,10 @@ export const Credits = styled.div`
         height: 2px;
         background-color: orangered;
         transition: 200ms;
+
+        @media only screen and (max-width: 425px) {
+          height: 1px;
+        }
       }
 
       &:hover::after {
