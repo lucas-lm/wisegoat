@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import axios from 'axios'
 import Logo from '../../components/Logo'
 import Root, { Card } from '../../components/Layouts/Advice'
@@ -38,6 +39,9 @@ export default function Advise(props) {
           <small>&mdash; {prefixes[props.id % 8]} Goat</small>
         </Card.Quote>
         <Card.Image src="https://placegoat.com/400/400" alt="goat" />
+        <Link href="/advice" passHref>
+          <Card.Button>Another advice &rarr;</Card.Button>
+        </Link>
       </Card>
     </Root>
   )

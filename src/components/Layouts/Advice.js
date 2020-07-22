@@ -15,6 +15,7 @@ const Advice = styled.div`
 `
 
 export const Card = styled.main`
+  position: relative;
   width: 95vw;
   max-width: 800px;
   min-height: 400px;
@@ -72,6 +73,34 @@ Card.Image = styled.img`
   @media only screen and (max-width: 768px) {
     width: 100%;
     border-radius: 0 0 8px 8px;
+  }
+`
+
+Card.Button = styled.a`
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: ${(props) => props.theme.colors.primary};
+  color: white;
+  font-weight: 500;
+  box-shadow: ${(props) => props.theme.colors.primary + '59'} 0px 2px 8px 1px;
+  transition: 200ms ease;
+
+  &:hover {
+    transform: scale(1.03);
+    background-color: ${(props) => props.theme.colors.primary + 'f0'};
+    box-shadow: ${(props) => props.theme.colors.primary + '70'} 0px 2px 4px 1px;
+  }
+
+  &:active {
+    transform: scale(0.97);
+    background-color: ${(props) => props.theme.colors.primary + 'fc'};
+    box-shadow: ${(props) => props.theme.colors.primary + '70'} 0px 1px 4px 1px;
   }
 `
 
