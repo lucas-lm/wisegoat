@@ -47,7 +47,10 @@ export default function Advise(props) {
         <meta property="og:site_name" content="Wise Goat" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:url" content="https://wisegoat.now.sh" />
-        <meta property="og:image" content="https://placegoat.com/1200/620" />
+        <meta
+          property="og:image"
+          content="https://wisegoat.now.sh/advice-banner.jpg"
+        />
 
         <title>Get advice - Wise Goat</title>
       </Head>
