@@ -1,7 +1,3 @@
-<p align='center'>
-  <img src='./public/banner.png' width='100%' height='auto' alt='Wise Goat' />
-</p>
-
 # :goat: Wise Goat
 
 Website generator of goats images and advices
@@ -9,7 +5,7 @@ Website generator of goats images and advices
 <!-- - [ ] Badges -->
 
 <p align="center">
- <!-- <a href="#about">About</a> • -->
+ <a href="#about">About</a> •
  <a href="#technologies">Technologies</a> • 
  <a href="#contributing">Contributing</a> • 
  <a href="#authors">Author</a> • 
@@ -19,6 +15,12 @@ Website generator of goats images and advices
 <p align='center'>
   <img src='./public/wisegoat.gif' width='auto' height='auto' alt='Wise Goat demo' />
 </p>
+
+## About
+
+This project is a front-end challenge from [DevChallenge](https://devchallenge.com.br).
+
+It is a very simple website where people can see advices by goats.
 
 <!-- - [ ] Features -->
 
@@ -44,4 +46,4 @@ All contributions are very welcome
 
 ## License
 
-  This project is under the MIT license. See the [LICENSE](https://github.com/lucas-lm/wisegoat/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/lucas-lm/wisegoat/blob/master/LICENSE) for more information.
