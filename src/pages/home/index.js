@@ -17,7 +17,7 @@ export default function Home() {
             <Headline.Small>Wise</Headline.Small>
             <br /> Goat
           </Headline>
-          <Link href="/advise" passHref>
+          <Link href="/advice" passHref>
             <CTA>Ask advise</CTA>
           </Link>
         </Hero.Left>
