@@ -11,6 +11,10 @@ export default function Home() {
           rel="stylesheet"
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <meta
+          name="description"
+          content="Get advices from the best goats you will ever met! It is free 🐐"
+        />
         <title>Wise Goat - home</title>
       </Head>
       <Hero>

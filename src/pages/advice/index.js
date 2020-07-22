@@ -13,6 +13,7 @@ const prefixes = [
   'Screaming',
   'Another',
   'Strange',
+  'Coach',
 ]
 
 export async function getServerSideProps(context) {
@@ -31,6 +32,10 @@ export default function Advise(props) {
           rel="stylesheet"
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <meta
+          name="description"
+          content="Get your free advices here! Our goats will be happy to help you 🐐"
+        />
         <title>Get advice - Wise Goat</title>
       </Head>
       <Logo size={4} />
@@ -38,7 +43,7 @@ export default function Advise(props) {
         <Card.Quote>
           <q>{props.advice}</q>
           <br />
-          <small>&mdash; {prefixes[props.id % 8]} Goat</small>
+          <small>&mdash; {prefixes[props.id % prefixes.length]} Goat</small>
         </Card.Quote>
         <Card.Image src="https://placegoat.com/400/400" alt="goat" />
         <Link href="/advice" passHref>
