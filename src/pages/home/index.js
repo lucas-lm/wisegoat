@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Root, { Headline, Hero, CTA } from '../../components/Layouts/Home'
+import Footer from '../../components/Footer'
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ export default function Home() {
         </Hero.Left>
         <Hero.Image src="/assets/bodezinho.png" alt="little goat" />
       </Hero>
+      <Footer />
     </Root>
   )
 }

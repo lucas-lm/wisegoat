@@ -3,6 +3,7 @@ import Link from 'next/link'
 import axios from 'axios'
 import Logo from '../../components/Logo'
 import Root, { Card } from '../../components/Layouts/Advice'
+import Footer from '../../components/Footer'
 
 const prefixes = [
   'Mr.',
@@ -66,6 +67,7 @@ export default function Advise(props) {
           <Card.Button>Another advice &rarr;</Card.Button>
         </Link>
       </Card>
+      <Footer />
     </Root>
   )
 }

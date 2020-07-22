@@ -19,7 +19,10 @@ const HomeLayout = styled.div`
   width: 100vw;
   height: 100vh;
   display: grid;
-  place-items: center;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    'hero'
+    'footer';
 `
 
 export const Hero = styled.main`
@@ -29,6 +32,7 @@ export const Hero = styled.main`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  grid-area: hero;
 `
 
 Hero.Left = styled.div`
