@@ -19,12 +19,10 @@ const prefixes = [
 
 export async function getServerSideProps(context) {
   const { data } = await axios.get('https://api.adviceslip.com/advice')
+  const { id, advice } = data.slip
+  const goat = `https://placegoat.com/400/400?id=${id}`
   return {
-    props: {
-      advice: data.slip.advice,
-      id: data.slip.id,
-      goat: 'https://placegoat.com/400/400',
-    },
+    props: { advice, id, goat },
   }
 }
 
