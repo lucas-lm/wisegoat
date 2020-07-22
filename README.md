@@ -1,7 +1,7 @@
 - [x] Logo ou Banner
 
 <p align='center'>
-  <img src='./public/banner.jpg' width='100%' height='auto' alt='Wise Goat' />
+  <img src='./public/banner.png' width='100%' height='auto' alt='Wise Goat' />
 </p>
 
 - [ ] Título e Descrição
