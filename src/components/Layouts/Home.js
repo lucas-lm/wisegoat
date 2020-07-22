@@ -79,6 +79,14 @@ export const CTA = styled.a`
   font-size: 2em;
   font-weight: 500;
   margin-top: 40px;
+  box-shadow: ${(props) => props.theme.colors.primary + '59'} 2px 2px 8px 1px;
+  transition: 200ms ease;
+
+  &:hover {
+    transform: scale(1.03);
+    background-color: ${(props) => props.theme.colors.primary + 'f0'};
+    box-shadow: ${(props) => props.theme.colors.primary + '70'} 2px 2px 4px 1px;
+  }
 
   @media only screen and (max-width: 1024px) {
     font-size: 1.8em;

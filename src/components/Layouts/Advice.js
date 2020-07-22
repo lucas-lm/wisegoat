@@ -25,6 +25,7 @@ export const Card = styled.main`
   justify-content: space-between;
   border-radius: 8px;
   flex-wrap: wrap;
+  box-shadow: ${(props) => props.theme.colors.primary + '30'} 0px 2px 4px 1px;
 
   @media only screen and (max-width: 768px) {
     width: 90vw;
