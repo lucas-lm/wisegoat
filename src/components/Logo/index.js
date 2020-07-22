@@ -4,7 +4,7 @@ import { Text } from './styles'
 
 export default function Logo({ size }) {
   return (
-    <Link href="/home" passHref>
+    <Link href="/" passHref>
       <Text size={size}>
         <Text.Small>Wise</Text.Small>
         <br />
