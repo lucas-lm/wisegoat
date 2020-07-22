@@ -40,7 +40,7 @@ Card.Quote = styled.article`
   @media only screen and (max-width: 768px) {
     font-size: 12px;
     width: 90%;
-    margin: 16px auto;
+    margin: 20px auto;
   }
 
   @media only screen and (max-width: 425px) {
@@ -66,10 +66,11 @@ Card.Image = styled.img`
   display: block;
   width: 400px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0 8px 8px 0;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
+    border-radius: 0 0 8px 8px;
   }
 `
 
