@@ -27,6 +27,7 @@ export default function Advise(props) {
           <br />
           <small>&mdash; Goat</small>
         </Card.Quote>
+        <Card.Image src="https://placegoat.com/400/400" alt="goat" />
       </Card>
     </Root>
   )
