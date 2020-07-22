@@ -7,6 +7,8 @@ module.exports = {
       '/home': { page: '/' },
       '/home/': { page: '/' },
       '/advice/': { page: '/advice' },
+      '/advices': { page: '/advice' },
+      '/advices/': { page: '/advice' },
     }
   },
 }

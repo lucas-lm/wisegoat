@@ -11,11 +11,25 @@ export default function Home() {
           rel="stylesheet"
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <meta name="theme-color" content="#ffffff"></meta>
         <meta
           name="description"
           content="Get advices from the best goats you will ever met! It is free 🐐"
         />
-        <title>Wise Goat - home</title>
+        <meta
+          property="og:description"
+          content="Get advices from the best goats you will ever met! It is free 🐐"
+        />
+        <meta property="og:title" content="Wise Goat" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Wise Goat" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:url" content="https://wisegoat.now.sh" />
+        <meta
+          property="og:image"
+          content="https://wisegoat.now.sh/banner.png"
+        />
+        <title>Wise Goat - Get smart advices from our goats</title>
       </Head>
       <Hero>
         <Hero.Left>

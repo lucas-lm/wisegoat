@@ -36,6 +36,19 @@ export default function Advise(props) {
           name="description"
           content="Get your free advices here! Our goats will be happy to help you 🐐"
         />
+
+        <meta name="theme-color" content="#ffffff"></meta>
+        <meta
+          property="og:description"
+          content="Get your free advices here! Our goats will be happy to help you 🐐"
+        />
+        <meta property="og:title" content="Wise Goat" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Wise Goat" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:url" content="https://wisegoat.now.sh" />
+        <meta property="og:image" content="https://placegoat.com/1200/620" />
+
         <title>Get advice - Wise Goat</title>
       </Head>
       <Logo size={4} />
