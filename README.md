@@ -2,9 +2,11 @@
 
 Website generator of goats images and advices
 
-![Website](https://img.shields.io/website?down_message=dead&label=website&up_message=alive&url=https%3A%2F%2Fwisegoat.now.sh)
-![GitHub last commit](https://img.shields.io/github/last-commit/lucas-lm/wisegoat)
-![GitHub](https://img.shields.io/github/license/lucas-lm/wisegoat)
+<p align='center'>
+  ![Website](https://img.shields.io/website?down_message=dead&label=website&up_message=alive&url=https%3A%2F%2Fwisegoat.now.sh)
+  ![GitHub last commit](https://img.shields.io/github/last-commit/lucas-lm/wisegoat)
+  ![GitHub](https://img.shields.io/github/license/lucas-lm/wisegoat)
+</p>
 
 <p align='center'>
   <img src='./public/wisegoat.gif' width='auto' height='auto' alt='Wise Goat demo' />
@@ -12,7 +14,6 @@ Website generator of goats images and advices
 
 
 # Table of Contents
-=================
 <!--ts-->
   * [About](#about)
   * [Features](#features)
