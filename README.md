@@ -40,10 +40,10 @@ It is a very simple website where people can see advices by goats. You can see i
 
 ## Technologies
 
-- Node.js
-- React.js
-- Next.js
-- styled-components
+- [Node.js](https://nodejs.org)
+- [React.js](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [styled-components](https://styled-components.com/)
 
 ## Get started
 
