@@ -10,18 +10,18 @@ Website generator of goats images and advices
   <img src='./public/wisegoat.gif' width='auto' height='auto' alt='Wise Goat demo' />
 </p>
 
+
 # Table of Contents
-
-<p align="center">
- <a href="#about">About</a> •
- <a href="#features">Features</a> •
- <a href="#technologies">Technologies</a> • 
- <a href="#get-started">Get started</a> • 
- <a href="#contributing">Contributing</a> • 
- <a href="#authors">Authors</a> • 
- <a href="#license">License</a>
-</p>
-
+=================
+<!--ts-->
+  * [About](#about)
+  * [Features](#features)
+  * [Technologies](#technologies)
+  * [Get Started](#get-started)
+  * [Contributing](#contributing)
+  * [Authors](#authors)
+  * [License](#license)   
+<!--te-->
 
 ## About
 
