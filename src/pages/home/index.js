@@ -7,6 +7,25 @@ export default function Home() {
   return (
     <Root>
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-173585531-1"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173585531-1"></script>
+              <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-173585531-1');
+              </script>
+          `,
+          }}
+        />
+
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet"
