@@ -9,8 +9,8 @@
   "dependencies": {
     "axios": "^0.26.0",
     "next": "latest",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
+    "react": "latest",
+    "react-dom": "latest",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
