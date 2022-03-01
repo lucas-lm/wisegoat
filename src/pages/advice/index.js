@@ -43,15 +43,10 @@ export async function getServerSideProps(context) {
 
 export default function Advise(props) {
 
-  console.log(props.goatSrc);
+  console.log(`Goat number ${props.goatNumber} - ${props.goatName} says: ${props.advice}`);
   return (
     <Root>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100300400500700900&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         <meta
           name="description"
           content="Get your free advices here! Our goats will be happy to help you 🐐"

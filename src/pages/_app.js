@@ -1,7 +1,6 @@
 import App from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from '../styles/GlobalStyles'
-import Footer from '../components/Footer'
 
 const theme = {
   colors: {
