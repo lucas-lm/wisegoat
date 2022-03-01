@@ -1,3 +1,5 @@
+import fs from "fs"
+import path from "path"
 import Head from 'next/head'
 import Link from 'next/link'
 import axios from 'axios'
@@ -5,7 +7,7 @@ import Logo from '../../components/Logo'
 import Root, { Card } from '../../components/Layouts/Advice'
 import Footer from '../../components/Footer'
 
-const prefixes = [
+const PREFIXES = [
   'Mr.',
   'Miss',
   'Lazy',
@@ -15,23 +17,38 @@ const prefixes = [
   'Another',
   'Strange',
   'Coach',
+  'Dr.',
+  'Amazing',
+  'Super'
 ]
 
+const PICS_FOLDER_NAME = "goats"
+const PICS_DIRECTORY = path.join(process.cwd(), "public", PICS_FOLDER_NAME)
+
+const getPicsCount = () => {
+    return fs.readdirSync(PICS_DIRECTORY).length
+}
+
 export async function getServerSideProps(context) {
+  const goatsPicsCount = getPicsCount()
   const { data } = await axios.get('https://api.adviceslip.com/advice')
   const { id, advice } = data.slip
-  const goat = `https://placegoat.com/400/400?id=${id}`
+  const goatNumber = (id % goatsPicsCount + 1)
+  const goatSrc = `/goats/goat_${goatNumber}.jpg`
+  const goatName = `${PREFIXES[goatNumber - 1]} Goat`
   return {
-    props: { advice, id, goat },
+    props: { advice, id, goatNumber, goatName, goatSrc }
   }
 }
 
 export default function Advise(props) {
+
+  console.log(props.goatSrc);
   return (
     <Root>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100300400500700900&display=swap"
           rel="stylesheet"
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
@@ -62,9 +79,9 @@ export default function Advise(props) {
         <Card.Quote>
           <q>{props.advice}</q>
           <br />
-          <small>&mdash; {prefixes[props.id % prefixes.length]} Goat</small>
+          <small>&mdash; {props.goatName}</small>
         </Card.Quote>
-        <Card.Image src={props.goat} alt="goat" />
+        <Card.Image src={props.goatSrc} alt="goat" />
         <Link href="/advice" passHref>
           <Card.Button>Get another advice &rarr;</Card.Button>
         </Link>
